@@ -3,3 +3,55 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit; }
+
+body {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Helvetica;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #45444A; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.hero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  height: 400px;
+  margin-top: 40px;
+  background: url("../assets/images/sunset.jpg") no-repeat;
+  background-size: cover;
+  background-position: 25% 78%;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: .2rem;
+  font-size: 30px;
+  text-shadow: 2px 3px 3px black; }
+  .hero:last-child {
+    margin-right: 0; }
+  .hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%); }
+
+.bio {
+  list-style-type: none;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 17.05961%;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  color: white; }
+  .bio:last-child {
+    margin-right: 0; }
+  .bio li {
+    padding-bottom: 10px; }
