@@ -5,53 +5,124 @@ html {
   box-sizing: inherit; }
 
 body {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Helvetica;
+  font-family: Raleway;
   width: 100%;
   margin: 0 auto;
-  background-color: #45444A; }
-  body::after {
-    clear: both;
-    content: "";
-    display: table; }
+  background-color: #FCF7E5; }
 
-.hero {
+header {
+  height: 160px;
+  background-color: #145173;
+  color: #FCF7E5;
+  border-bottom: 10px solid #F75849; }
+
+section {
+  background-color: #AEC3C1;
+  border-radius: 10px;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
   margin-left: 8.5298%;
-  height: 400px;
-  margin-top: 40px;
-  background: url("../assets/images/sunset.jpg") no-repeat;
-  background-size: cover;
-  background-position: 25% 78%;
-  border-radius: 5px;
-  color: white;
-  letter-spacing: .2rem;
-  font-size: 30px;
-  text-shadow: 2px 3px 3px black; }
-  .hero:last-child {
+  padding: 30px 0;
+  margin-bottom: 30px;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  color: #081C25; }
+  section:last-child {
     margin-right: 0; }
-  .hero h1 {
-    position: absolute;
-    top: 10%;
-    left: 40%;
-    transform: translate(-50%, -50%); }
 
-.bio {
-  list-style-type: none;
+ul {
+  list-style-type: none; }
+
+.header-content {
+  position: relative;
+  height: 160px; }
+  .header-content .header-details {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 8.5298%;
+    padding-left: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-25%); }
+    .header-content .header-details::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .header-content .header-details--name {
+      color: white;
+      font-weight: 100;
+      font-size: 36px; }
+    .header-content .header-details--byline {
+      font-weight: 100;
+      font-size: 16px; }
+  .header-content .header-contact {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 76.76824%;
+    list-style-type: none;
+    font-size: 32px;
+    font-weight: 100;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%); }
+    .header-content .header-contact::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .header-content .header-contact--method {
+      display: inline-block;
+      padding-left: 15px; }
+      .header-content .header-contact--method a {
+        text-decoration: none;
+        color: white; }
+
+.profile {
+  margin-top: 30px; }
+  .profile--bio {
+    list-style-type: none;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 8.5298%; }
+    .profile--bio:last-child {
+      margin-right: 0; }
+    .profile--bio li {
+      padding-bottom: 15px; }
+  .profile--photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-left: 8.5298%; }
+    .profile--photo:last-child {
+      margin-right: 0; }
+    .profile--photo img {
+      width: 100%;
+      border-radius: 5%;
+      -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+      -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+      box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
+
+.projects .project-container {
+  margin-left: 8.5298%; }
+
+.projects--entry {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
-  margin-left: 17.05961%;
-  font-size: .9rem;
-  letter-spacing: .1rem;
-  color: white; }
-  .bio:last-child {
+  width: 40.29137%;
+  padding-bottom: 30px; }
+  .projects--entry:last-child {
     margin-right: 0; }
-  .bio li {
-    padding-bottom: 10px; }
+  .projects--entry--preview img {
+    width: 100%; }
+  .projects--entry .name {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 20px; }

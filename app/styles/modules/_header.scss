@@ -1,0 +1,40 @@
+.header-content{
+  position: relative;
+  height: 160px;
+  .header-details{
+    @include outer-container;
+    @include shift(1);
+    padding-left: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-25%);
+    &--name{
+      color: white;
+      font-weight: 100;
+      font-size: 36px;
+    }
+    &--byline{
+      font-weight: 100;
+      font-size: 16px;
+    }
+  }
+  .header-contact{
+    @include outer-container;
+    @include shift(9);
+    list-style-type: none;
+    font-size: 32px;
+    font-weight: 100;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    &--method{
+      display: inline-block;
+      padding-left: 15px;
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}

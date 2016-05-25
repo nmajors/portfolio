@@ -1,0 +1,20 @@
+.projects {
+  .project-container {
+    @include shift(1);
+  }
+  &--entry {
+    @include span-columns(5);
+    padding-bottom: 30px;
+    // @include span-columns(6);
+    &--preview {
+      img {
+        width: 100%;
+      }
+    }
+    .name{
+      text-align: center;
+      padding-bottom: 15px;
+      font-size: 20px;
+    }
+  }
+}

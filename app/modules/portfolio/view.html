@@ -1,14 +1,36 @@
-<div class="hero">
-  <h1 class="name">Nancy Majors Smith</h1>
+<div class="content">
+  <section class="profile">
+    <ul class="profile--bio">
+      <li>
+        Biologist turned software developer through the Front End Engineering program at The Iron Yard.
+      </li>
+      <li>
+        Subscriber to a clean, simple, and user friendly aesthetic.
+      </li>
+      <li>
+        Student of meteorology, astronomy, microbiology, loud music, and silly puns.
+      </li>
+    </ul>
+    <div class="profile--photo">
+      <img ng-src="../assets/images/nancy-kids.jpg" alt="Nancy and Kids">
+    </div>
+  </section>
+
+
+  <section class="projects">
+    <div class="project-container">
+      <ul class="projects--entry" ng-repeat="project in portfolioCtrl.projects">
+        <li class="projects--entry--detail name">{{ project.name }}</li>
+        <li class="projects--entry--preview"><img ng-src="{{ project.image }}" alt="{{ project.name }}"></li>
+        <div class="projects--entry--details">
+
+          <li class="projects--entry--detail">{{ project.description }}</li>
+          <li class="projects--entry--detail"><a href="{{ project.site }}">Live Site</a></li>
+          <li class="projects--entry--detail"><a href="{{ project.repository }}">Code</a></li>
+        </div>
+      </ul>
+    </div>
+
+</section>
+
 </div>
-<ul class="bio">
-  <li>
-    Biologist turned software developer through the Front End Engineering program at The Iron Yard.
-  </li>
-  <li>
-    Subscriber to a clean, simple, and user friendly aesthetic.
-  </li>
-  <li>
-    Student of meteorology, astronomy, microbiology, loud music, and silly puns.
-  </li>
-</ul>
