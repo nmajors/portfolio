@@ -121,7 +121,11 @@ ul {
   .projects--entry:last-child {
     margin-right: 0; }
   .projects--entry--preview img {
-    width: 100%; }
+    width: 100%;
+    border-radius: 5%;
+    -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+    -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+    box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
   .projects--entry .name {
     text-align: center;
     padding-bottom: 15px;
