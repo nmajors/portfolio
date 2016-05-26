@@ -19,7 +19,7 @@
       box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
     }
   }
-.resume-link{
+.blue-button{
   margin-top: 30px;
   @include span-columns(5);
   background-color: $darkblue;
@@ -30,6 +30,9 @@
   // height: 30px;
   color: $cream;
   border-radius: 5px;
+  &:hover{
+    background-color: $coral;
+  }
 
 }
 #resume-download{

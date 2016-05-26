@@ -20,3 +20,19 @@
 //   }
 //
 // }
+.blue-button{
+  margin-top: 30px;
+  @include span-columns(5);
+  background-color: $darkblue;
+  padding: 10px;
+  font-size: 14px;
+
+  font-weight: 100;
+  // height: 30px;
+  color: $cream;
+  border-radius: 5px;
+  &:hover{
+    background-color: $coral;
+  }
+
+}

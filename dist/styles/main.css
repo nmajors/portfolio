@@ -42,6 +42,23 @@ section {
 ul {
   list-style-type: none; }
 
+.blue-button {
+  margin-top: 30px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  background-color: #145173;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 100;
+  color: #FCF7E5;
+  border-radius: 5px; }
+  .blue-button:last-child {
+    margin-right: 0; }
+  .blue-button:hover {
+    background-color: #F75849; }
+
 .header-content {
   position: relative;
   height: 160px; }
@@ -115,7 +132,7 @@ ul {
       -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
       -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
       box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
-  .profile .resume-link {
+  .profile .blue-button {
     margin-top: 30px;
     float: left;
     display: block;
@@ -127,8 +144,10 @@ ul {
     font-weight: 100;
     color: #FCF7E5;
     border-radius: 5px; }
-    .profile .resume-link:last-child {
+    .profile .blue-button:last-child {
       margin-right: 0; }
+    .profile .blue-button:hover {
+      background-color: #F75849; }
   .profile #resume-download {
     margin-left: 10%; }
 
@@ -146,18 +165,19 @@ ul {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 44.55627%;
+  width: 82.94039%;
+  margin-left: 4.2649%;
+  min-height: 360px;
   padding-bottom: 30px; }
   .projects--entry:last-child {
     margin-right: 0; }
-  .projects--entry:nth-child(2n) {
-    margin-right: 0; }
-  .projects--entry:nth-child(2n+1) {
-    clear: left; }
   .projects--entry--preview {
     text-align: center; }
     .projects--entry--preview img {
-      width: 250px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
       height: 250px;
       border-radius: 50%;
       opacity: .6;
@@ -165,13 +185,22 @@ ul {
       -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
       box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
       transition: width 0.7s, height 0.7s, border-radius 0.7s, opacity 0.7s; }
+      .projects--entry--preview img:last-child {
+        margin-right: 0; }
       .projects--entry--preview img:hover {
-        width: 100%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
         height: 100%;
         border-radius: 0;
         opacity: 1; }
+        .projects--entry--preview img:hover:last-child {
+          margin-right: 0; }
+  .projects--entry--details {
+    float: right;
+    width: 30%; }
   .projects--entry .name {
-    text-align: center;
     padding-bottom: 15px;
     font-size: 20px; }
 
