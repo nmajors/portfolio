@@ -10,9 +10,11 @@ header{
   background-color: $darkblue;
   color: $cream;
   border-bottom: 10px solid $coral;
+
 }
 
 section{
+  @include outer-container;
   background-color: $lightblue;
   border-radius: 10px;
   @include span-columns(10);

@@ -10,6 +10,21 @@
       <li>
         Student of meteorology, astronomy, microbiology, loud music, and silly puns.
       </li>
+      <li>
+        <a href="../assets/documents/Resume-NMS-Dev.pdf">
+          <button class="resume-link">
+              <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              View Resume
+          </button>
+        </a>
+
+          <a href="https://docs.google.com/document/d/11nqcbjVimFtFIFQpy1fJUULX_7-w0TPHiRi8-hPdx1k/export?format=pdf">
+            <button class="resume-link" id="resume-download">
+              <i class="fa fa-file-pdf-o"></i>
+              Download Resume
+            </button>
+          </a>
+      </li>
     </ul>
     <div class="profile--photo">
       <img ng-src="../assets/images/nancy-kids.jpg" alt="Nancy and Kids">
@@ -22,6 +37,7 @@
       <ul class="projects--entry" ng-repeat="project in portfolioCtrl.projects">
         <li class="projects--entry--detail name">{{ project.name }}</li>
         <li class="projects--entry--preview"><img ng-src="{{ project.image }}" alt="{{ project.name }}"></li>
+        <!-- <li class="mask">{{ project.name }}</li> -->
         <div class="projects--entry--details">
 
           <li class="projects--entry--detail">{{ project.description }}</li>
