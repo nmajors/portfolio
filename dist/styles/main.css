@@ -7,7 +7,7 @@ html {
 body {
   font-family: Raleway;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   background-color: #FCF7E5; }
 
 header {
@@ -27,11 +27,15 @@ section {
   margin-right: 2.35765%;
   width: 82.94039%;
   margin-left: 8.5298%;
+  min-height: 400px;
   padding: 30px 0;
   margin-bottom: 30px;
   font-size: .9rem;
   letter-spacing: .1rem;
-  color: #081C25; }
+  color: #081C25;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
   section::after {
     clear: both;
     content: "";
@@ -56,6 +60,23 @@ ul {
 
 .button-link {
   text-decoration: none; }
+
+.sidebar {
+  border-left: 1px solid #145173;
+  width: 100%;
+  position: fixed;
+  text-align: right;
+  right: 2%;
+  bottom: 0; }
+  .sidebar a {
+    text-decoration: none;
+    color: #081C25;
+    opacity: .6; }
+
+.side-icons {
+  padding: 0 0 0 15px;
+  font-size: 32px;
+  display: inline-block; }
 
 .header-content {
   position: relative;
@@ -104,14 +125,18 @@ ul {
         color: white; }
 
 .profile {
-  margin-top: 30px; }
+  margin-top: 30px;
+  position: relative; }
   .profile--bio {
     list-style-type: none;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
-    margin-left: 8.5298%; }
+    margin-left: 4.2649%;
+    position: absolute;
+    top: calc(50% - 15px);
+    transform: translateY(-50%); }
     .profile--bio:last-child {
       margin-right: 0; }
     .profile--bio li {
@@ -120,8 +145,9 @@ ul {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
-    margin-left: 8.5298%; }
+    width: 31.76157%;
+    margin-left: 61.84108%;
+    position: absolute; }
     .profile--photo:last-child {
       margin-right: 0; }
     .profile--photo img {
@@ -202,25 +228,25 @@ ul {
   margin-left: 3%; }
 
 .project-img1 {
-  background-image: url("../assets/images/weather-watcher-full.png");
+  background-image: url("./assets/images/weather-watcher-full.png");
   background-size: cover; }
 
 .project-img2 {
-  background-image: url("../assets/images/powell-peralta-full.png");
+  background-image: url("./assets/images/powell-peralta-full.png");
   background-size: cover;
   background-position: center top; }
 
 .project-img3 {
-  background-image: url("../assets/images/image-gallery.jpg");
+  background-image: url("./assets/images/image-gallery.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: right; }
 
 .project-img4 {
-  background-image: url("../assets/images/to-do-list.jpg");
+  background-image: url("./assets/images/to-do-list.jpg");
   background-size: cover; }
 
 .project-img5 {
-  background-image: url("../assets/images/weather-api.jpg");
+  background-image: url("./assets/images/weather-api.jpg");
   background-size: cover; }
 
 .project {
@@ -229,6 +255,7 @@ ul {
   border-radius: 50%;
   position: relative;
   cursor: default;
+  margin-bottom: 15px;
   box-shadow: inset 0 0 0 140px rgba(153, 54, 45, 0.7), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
   transition: all 0.4s ease-in-out; }
   .project:hover {

@@ -17,3 +17,22 @@
 .button-link{
   text-decoration: none;
 }
+
+.sidebar{
+  border-left: 1px solid $darkblue;
+  width: 100%;
+  position: fixed;
+  text-align: right;
+  right: 2%;
+  bottom: 0;
+  a{
+    text-decoration: none;
+    color: $black;
+    opacity: .6;
+  }
+}
+.side-icons{
+  padding: 0 0 0 15px;
+  font-size: 32px;
+  display: inline-block;
+}
