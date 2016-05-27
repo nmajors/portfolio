@@ -191,25 +191,25 @@ ul {
     border-radius: 5%; }
 
 .project-img1 {
-  background-image: url("./assets/images/weather-watcher-full.png");
+  background-image: url("../assets/images/weather-watcher-full.png");
   background-size: cover; }
 
 .project-img2 {
-  background-image: url("./assets/images/powell-peralta-full.png");
+  background-image: url("../assets/images/powell-peralta-full.png");
   background-size: cover;
   background-position: center top; }
 
 .project-img3 {
-  background-image: url("./assets/images/image-gallery.jpg");
+  background-image: url("../assets/images/image-gallery.jpg");
   background-size: cover;
   background-position: center; }
 
 .project-img4 {
-  background-image: url("./assets/images/to-do-list.jpg");
+  background-image: url("../assets/images/to-do-list.jpg");
   background-size: cover; }
 
 .project-img5 {
-  background-image: url("./assets/images/weather-api.jpg");
+  background-image: url("../assets/images/weather-api.jpg");
   background-size: cover; }
 
 .project-name {
