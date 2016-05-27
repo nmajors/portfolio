@@ -5,32 +5,32 @@
 .projects-grid {
   @include shift(0.5);
   // margin: 20px 0 0 0;
-  padding: 0;
-  list-style: none;
-  display: block;
+  // padding: 0;
+
+  // display: block;
   text-align: center;
   width: 100%;
 
 }
-.projects-grid:after,
-.project:before {
-  content: '';
-  display: table;
-}
 
-.projects-grid:after{
-  clear: both;
-}
+
+// .projects-grid:after{
+//   clear: both;
+// }
 
 .projects-grid li {
-	width: 280px;
-	height: 280px;
-	display: inline-block;
+	// width: 280px;
+	// height: 280px;
+  @include span-columns(5.5);
+  @include omega(2n);
+  // @include outer-container;
+	// display: inline-block;
 	margin: 20px;
 }
 .project {
-  width: 100%;
-  height: 100%;
+  // @include span-columns(6 of 12);
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   position: relative;
   cursor: default;
@@ -44,6 +44,7 @@
 .project-img1 {
   background-image: url('../assets/images/weather-watcher-full.png');
   background-size: cover;
+
 }
 .project-img2{
   background-image: url('../assets/images/powell-peralta-full.png');
@@ -65,7 +66,7 @@
   background-size: cover;
 }
 
-.project-info {
+.project-name {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -93,12 +94,17 @@
 
 
 }
-.project:hover .project-info {
+.project:hover .project-name {
   transform: scale(0);
   opacity: 1;
 }
-.project:hover .project-info a {
+.project:hover .project-name a {
   opacity: 1;
+}
+.project-buttons{
+  // @include span-columns(6 of 12);
+  // @include omega;
+  height: 280px;
 }
 .project-button {
   // opacity: 0;
@@ -112,6 +118,7 @@
   color: $cream;
   border-radius: 5px;
   margin-top: 25px;
+
 
   &:hover{
     cursor: pointer;
