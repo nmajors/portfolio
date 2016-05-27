@@ -1,38 +1,19 @@
-// .hero{
-//   @include span-columns(10);
-//   @include shift(1);
-//   height: 400px;
-//   margin-top: 40px;
-//   background: url("../assets/images/sunset.jpg") no-repeat;
-//   background-size: cover;
-//   background-position: 25% 78%;
-//   border-radius: 5px;
-//   // text-align: center;
-//   color: white;
-//   letter-spacing: .2rem;
-//   font-size: 30px;
-//   text-shadow: 2px 3px 3px rgba(0, 0, 0, 1);
-//   h1{
-//     position: absolute;
-//     top: 10%;
-//     left: 40%;
-//     transform: translate(-50%, -50%);
-//   }
-//
-// }
+
 .blue-button{
   margin-top: 30px;
-  @include span-columns(5);
+  width: 40%;
   background-color: $darkblue;
   padding: 10px;
   font-size: 14px;
-
   font-weight: 100;
-  // height: 30px;
   color: $cream;
   border-radius: 5px;
   &:hover{
     background-color: $coral;
   }
 
+}
+
+.button-link{
+  text-decoration: none;
 }
