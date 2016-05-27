@@ -3,7 +3,6 @@ import uiRouter from 'angular-ui-router';
 
 import firebase from 'firebase';
 import angularFire from 'angularfire';
-import WOW from 'wowjs';
 
 
 
