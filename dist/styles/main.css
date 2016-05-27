@@ -151,6 +151,15 @@ ul {
   .profile #resume-download {
     margin-left: 10%; }
 
+.projects-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .projects-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 .projects-grid {
   margin-left: 4.2649%;
   text-align: center;
@@ -160,13 +169,13 @@ ul {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 44.55627%;
+  width: 40.29137%;
   margin: 20px; }
   .projects-grid li:last-child {
     margin-right: 0; }
-  .projects-grid li:nth-child(2n) {
+  .projects-grid li:nth-child(3n) {
     margin-right: 0; }
-  .projects-grid li:nth-child(2n+1) {
+  .projects-grid li:nth-child(3n+1) {
     clear: left; }
 
 .project {
@@ -182,25 +191,25 @@ ul {
     border-radius: 5%; }
 
 .project-img1 {
-  background-image: url("../assets/images/weather-watcher-full.png");
+  background-image: url("./assets/images/weather-watcher-full.png");
   background-size: cover; }
 
 .project-img2 {
-  background-image: url("../assets/images/powell-peralta-full.png");
+  background-image: url("./assets/images/powell-peralta-full.png");
   background-size: cover;
   background-position: center top; }
 
 .project-img3 {
-  background-image: url("../assets/images/image-gallery.jpg");
+  background-image: url("./assets/images/image-gallery.jpg");
   background-size: cover;
   background-position: center; }
 
 .project-img4 {
-  background-image: url("../assets/images/to-do-list.jpg");
+  background-image: url("./assets/images/to-do-list.jpg");
   background-size: cover; }
 
 .project-img5 {
-  background-image: url("../assets/images/weather-api.jpg");
+  background-image: url("./assets/images/weather-api.jpg");
   background-size: cover; }
 
 .project-name {
@@ -233,7 +242,7 @@ ul {
   opacity: 1; }
 
 .project-buttons {
-  height: 280px; }
+  text-align: center; }
 
 .project-button {
   background-color: #145173;
