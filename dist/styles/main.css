@@ -7,7 +7,7 @@ html {
 body {
   font-family: Raleway;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   background-color: #FCF7E5; }
 
 header {
@@ -27,11 +27,15 @@ section {
   margin-right: 2.35765%;
   width: 82.94039%;
   margin-left: 8.5298%;
+  min-height: 400px;
   padding: 30px 0;
   margin-bottom: 30px;
   font-size: .9rem;
   letter-spacing: .1rem;
-  color: #081C25; }
+  color: #081C25;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
   section::after {
     clear: both;
     content: "";
@@ -44,20 +48,35 @@ ul {
 
 .blue-button {
   margin-top: 30px;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 40.29137%;
+  width: 40%;
   background-color: #145173;
   padding: 10px;
   font-size: 14px;
   font-weight: 100;
   color: #FCF7E5;
   border-radius: 5px; }
-  .blue-button:last-child {
-    margin-right: 0; }
   .blue-button:hover {
     background-color: #F75849; }
+
+.button-link {
+  text-decoration: none; }
+
+.sidebar {
+  border-left: 1px solid #145173;
+  width: 100%;
+  position: fixed;
+  text-align: right;
+  right: 2%;
+  bottom: 0; }
+  .sidebar a {
+    text-decoration: none;
+    color: #081C25;
+    opacity: .6; }
+
+.side-icons {
+  padding: 0 0 0 15px;
+  font-size: 32px;
+  display: inline-block; }
 
 .header-content {
   position: relative;
@@ -106,14 +125,18 @@ ul {
         color: white; }
 
 .profile {
-  margin-top: 30px; }
+  margin-top: 30px;
+  position: relative; }
   .profile--bio {
     list-style-type: none;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
-    margin-left: 8.5298%; }
+    margin-left: 4.2649%;
+    position: absolute;
+    top: calc(50% - 15px);
+    transform: translateY(-50%); }
     .profile--bio:last-child {
       margin-right: 0; }
     .profile--bio li {
@@ -122,8 +145,9 @@ ul {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
-    margin-left: 8.5298%; }
+    width: 31.76157%;
+    margin-left: 61.84108%;
+    position: absolute; }
     .profile--photo:last-child {
       margin-right: 0; }
     .profile--photo img {
@@ -132,22 +156,6 @@ ul {
       -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
       -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
       box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
-  .profile .blue-button {
-    margin-top: 30px;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
-    background-color: #145173;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: 100;
-    color: #FCF7E5;
-    border-radius: 5px; }
-    .profile .blue-button:last-child {
-      margin-right: 0; }
-    .profile .blue-button:hover {
-      background-color: #F75849; }
   .profile #resume-download {
     margin-left: 10%; }
 
@@ -169,26 +177,55 @@ ul {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 40.29137%;
-  margin: 20px; }
+  width: 40.29137%; }
   .projects-grid li:last-child {
     margin-right: 0; }
-  .projects-grid li:nth-child(3n) {
-    margin-right: 0; }
-  .projects-grid li:nth-child(3n+1) {
-    clear: left; }
 
-.project {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
+.description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 112.79471%;
+  background-color: #FCF7E5;
+  color: #081C25;
+  min-height: 280px;
+  border-radius: 10px;
+  text-align: left;
   position: relative;
-  cursor: default;
-  box-shadow: inset 0 0 0 140px rgba(8, 28, 37, 0.6), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease-in-out; }
-  .project:hover {
-    box-shadow: inset 0 0 0 0px rgba(20, 81, 115, 0.2), inset 0 0 0 1px #081c25, 0 1px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 5%; }
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  box-shadow: 2px 2px 7px 0px rgba(8, 28, 37, 0.53); }
+  .description:last-child {
+    margin-right: 0; }
+  .description p {
+    padding: 0 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    transform: translateY(-50%);
+    line-height: 1.5;
+    margin: 0 auto; }
+
+.project-button {
+  width: 25%;
+  background-color: #145173;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: 100;
+  color: #FCF7E5;
+  border-radius: 5px; }
+  .project-button:hover {
+    background-color: #F75849; }
+
+.project-buttons {
+  text-align: right;
+  position: absolute;
+  bottom: 30px;
+  left: -45px;
+  width: 100%; }
+
+.button2 {
+  float: right;
+  margin-left: 3%; }
 
 .project-img1 {
   background-image: url("../assets/images/weather-watcher-full.png");
@@ -202,7 +239,7 @@ ul {
 .project-img3 {
   background-image: url("../assets/images/image-gallery.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: right; }
 
 .project-img4 {
   background-image: url("../assets/images/to-do-list.jpg");
@@ -211,6 +248,19 @@ ul {
 .project-img5 {
   background-image: url("../assets/images/weather-api.jpg");
   background-size: cover; }
+
+.project {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  position: relative;
+  cursor: default;
+  margin-bottom: 15px;
+  box-shadow: inset 0 0 0 140px rgba(153, 54, 45, 0.7), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+  transition: all 0.4s ease-in-out; }
+  .project:hover {
+    box-shadow: inset 0 0 0 0px rgba(8, 28, 37, 0.3), inset 0 0 0 1px rgba(8, 28, 37, 0.5), 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
+    border-radius: 5%; }
 
 .project-name {
   position: absolute;
@@ -228,7 +278,7 @@ ul {
     letter-spacing: 2px;
     font-size: 22px;
     margin: 0 30px;
-    padding: 90px 0 0;
+    padding: 110px 0 0;
     text-shadow: 0 1px 2px rgba(8, 28, 37, 0.9); }
   .project-name a {
     padding-top: 15px;
@@ -240,21 +290,6 @@ ul {
 
 .project:hover .project-name a {
   opacity: 1; }
-
-.project-buttons {
-  text-align: center; }
-
-.project-button {
-  background-color: #145173;
-  border: 1px solid #AEC3C1;
-  font-size: 12px;
-  font-weight: 100;
-  color: #FCF7E5;
-  border-radius: 5px;
-  margin-top: 25px; }
-  .project-button:hover {
-    cursor: pointer;
-    background-color: #AEC3C1; }
 
 /*!
  * animate.css -http://daneden.me/animate
