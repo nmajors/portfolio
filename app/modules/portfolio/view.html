@@ -31,159 +31,29 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects" ng-repeat="project in portfolioCtrl.projects">
     <div class="projects-container">
       <ul class="projects-grid">
-
         <li>
-          <div class="project project-img1">
+          <div class="project" ng-style="{'background-image':'url({{ project.screenshot }})', 'background-size': 'cover'}">
             <div class="project-name">
-              <h3>Weather Watcher</h3>
+              <h3>{{ project.name }}</h3>
             </div>
           </div>
         </li>
 
         <li>
-          <div ng-class="{'animated slideInRight description': portfolioCtrl.bouncing, 'description': !portfolioCtrl.bouncing}" in-view="portfolioCtrl.isInView($inview)">
 
+          <!--sliding needs to be in a function?-->
+          <div ng-class="{'animated slideInRight description': project.sliding }" in-view="portfolioCtrl.isInView($inview)">
             <p>
-              User adds the addresses of their friends and family across the country. The app stores the user's list of locations and when the user logs on, the current weather is displayed for each saved location, along with the user's current position. Animations
-              call attention to severe weather situations.
+              {{ project.description }}
             </br>
-              <div class="project-buttons">
-                <a class="button-link" href="https://nmajors.github.io/final-project/">
+            <div class="project-buttons">
+                <a class="button-link" href="{{ project.site }}">
                   <button class="project-button">Live Site</button>
                 </a>
-                <a class="button-link" href="https://github.com/nmajors/final-project.git">
-                  <button class="project-button button2">View Code</button>
-                </a>
-              </div>
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="projects">
-    <div class="projects-container">
-      <ul class="projects-grid">
-        <li>
-          <div class="project project-img2">
-            <div class="project-name">
-              <h3>Powell Peralta Skateboards</h3>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div ng-class="{'animated slideInRight description': portfolioCtrl.bouncing, 'description': !portfolioCtrl.bouncing}" in-view="portfolioCtrl.isInView($inview)">
-
-            <p>
-              Demonstrates the ability to create a responsive page layout from scratch using Sass variables and nesting, effectively using node-sass and @media queries.
-            </br>
-              <div class="project-buttons">
-                <a class="button-link" href="https://nmajors.github.io/08-powell-peralta-master/">
-                  <button class="project-button">Live Site</button>
-                </a>
-                <a class="button-link" href="https://github.com/nmajors/08-powell-peralta-master.git">
-                  <button class="project-button button2">View Code</button>
-                </a>
-              </div>
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-  <section class="projects">
-    <div class="projects-container">
-      <ul class="projects-grid">
-        <li>
-          <div class="project project-img3">
-            <div class="project-name">
-              <h3>Image Gallery</h3>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div ng-class="{'animated slideInRight description': portfolioCtrl.bouncing, 'description': !portfolioCtrl.bouncing}" in-view="portfolioCtrl.isInView($inview)">
-            <p>
-              Moving business logic and data calls into a service, using simple authorization through github so each user has their own data. Using services to organize code.
-            </br>
-              <div class="project-buttons">
-                <a class="button-link" href="https://nmajors.github.io/29-auth-services/dist/">
-                  <button class="project-button">Live Site</button>
-                </a>
-                <a class="button-link" href="https://github.com/nmajors/29-auth-services.git">
-                  <button class="project-button button2">View Code</button>
-                </a>
-              </div>
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-  <section class="projects">
-    <div class="projects-container">
-      <ul class="projects-grid">
-        <li>
-          <div class="project project-img4">
-            <div class="project-name">
-              <h3>To Do List</h3>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div ng-class="{'animated slideInRight description': portfolioCtrl.bouncing, 'description': !portfolioCtrl.bouncing}" in-view="portfolioCtrl.isInView($inview)">
-            <p>
-              Using Firebase to act as a simple back end for a todo list app, saves todos, can mark todos as complete, can view all complete or all incomplete, and can delete completed todos.
-            </br>
-              <div class="project-buttons">
-                <a class="button-link" href="https://nmajors.github.io/28-firebase/dist/">
-                  <button class="project-button">Live Site</button>
-                </a>
-                <a class="button-link" href="https://github.com/nmajors/28-firebase.git">
-                  <button class="project-button button2">View Code</button>
-                </a>
-              </div>
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="projects">
-    <div class="projects-container">
-      <ul class="projects-grid">
-        <li>
-          <div class="project project-img5">
-            <div class="project-name">
-              <h3>Weather API</h3>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div ng-class="{'animated slideInRight description': portfolioCtrl.bouncing, 'description': !portfolioCtrl.bouncing}" in-view="portfolioCtrl.isInView($inview)">
-
-            <p>
-              Using GET to receive data from the OpenWeatherMap API, hiding the API key through a proxy, effectively using Promise and fetch to get weather data for current position and creating an the app almost entirely in vanilla Javascript. Geolocation for current
-              position
-            </br>
-              <div class="project-buttons">
-                <a class="button-link" href="https://nmajors.github.io/18-weather-api/dist/">
-                  <button class="project-button">Live Site</button>
-                </a>
-                <a class="button-link" href="https://github.com/nmajors/18-weather-api.git">
+                <a class="button-link" href="{{ project.code }}">
                   <button class="project-button button2">View Code</button>
                 </a>
               </div>
