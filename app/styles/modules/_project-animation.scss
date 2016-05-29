@@ -46,6 +46,8 @@
   opacity: 1;
 }
 
-.hidden{
-  display: none;
+.project:after {
+    content: "";
+    display: table;
+    clear: both;
 }

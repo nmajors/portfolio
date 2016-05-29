@@ -26,6 +26,7 @@
   -webkit-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
   -moz-box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
   box-shadow: 2px 2px 7px 0px rgba(8, 28, 37,0.53);
+  // -webkit-animation-iteration-count: 1;
   // margin: 0;
   p{
     padding: 0 30px;
@@ -34,9 +35,17 @@
     transform: translateY(-50%);
     line-height: 1.5;
     margin: 0 auto;
+
   }
 }
+.project-buttons{
+  text-align: right;
+  position: absolute;
+  bottom: 30px;
+  left: -45px;
+  width: 100%;
 
+}
 
 
 .project-button {
@@ -54,42 +63,19 @@
 
 }
 
-.project-buttons{
-  text-align: right;
-  position: absolute;
-  bottom: 30px;
-  left: -45px;
-
-  width: 100%;
-}
 .button2{
   float: right;
   margin-left: 3%;
+}
 
+.tech{
+  @include shift(0.5);
+  margin-right: 4.2649%;
+  padding-top: 15px;
+  line-height: 1.5;
 }
 
 
-.project-img1 {
-  background-image: url('../assets/images/weather-watcher-full.png');
-  background-size: cover;
-
-}
-.project-img2{
-  background-image: url('../assets/images/powell-peralta-full.png');
-  background-size: cover;
-  background-position:center top;
-}
-
-.project-img3 {
-  background-image: url('../assets/images/image-gallery.jpg');
-  background-size: cover;
-  background-position: right;
-}
-.project-img4 {
-  background-image: url('../assets/images/to-do-list.jpg');
-  background-size: cover;
-}
-.project-img5 {
-  background-image: url('../assets/images/weather-api.jpg');
-  background-size: cover;
+.hidden{
+  display: none;
 }
