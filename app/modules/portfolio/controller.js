@@ -7,7 +7,7 @@ class PortfolioController {
       {
         // TODO: update description
         name: "Weather Watcher",
-        description: "User adds the addresses of their friends and family across the country. The app stores the user's list of locations and when the user logs on, the current weather is displayed for each saved location, along with the user's current position. Animations call attention to severe weather situations.",
+        description: "My final project for The Iron Yard. A fully responsive web app where each user can save addresses for their friends and family and keep track of weather conditions and severe weather situations for all of their saved locations in one place.",
         screenshot: '../assets/images/weather-watcher-full.png',
         site: "https://nmajors.github.io/final-project/",
         code: "https://github.com/nmajors/final-project.git",
@@ -15,9 +15,8 @@ class PortfolioController {
         sliding: false
       },
       {
-        // TODO: update description
-        name: "Powell Peralta",
-        description: "Demonstrates the ability to create a responsive page layout from scratch using Sass variables and nesting, effectively using node-sass and @media queries.",
+        name: "Powell Peralta Skateboards",
+        description: "A fully responsive site layout created with @media queries.",
         screenshot: '../assets/images/powell-peralta-full.png',
         site: "https://nmajors.github.io/powell-peralta-master/",
         code: "https://github.com/nmajors/powell-peralta-master/",
@@ -25,10 +24,8 @@ class PortfolioController {
         sliding: false
       },
       {
-
-        // TODO: update description
         name: "Image Gallery",
-        description: "Moving business logic and data calls into a service, using simple authorization through github so each user has their own data. Using services to organize code.",
+        description: "An exercise on moving business logic and data calls into a service, using simple authorization through github so each user has their own data.",
         screenshot: '../assets/images/image-gallery.jpg',
         site: "https://nmajors.github.io/29-auth-services/dist/",
         code: "https://github.com/nmajors/29-auth-services.git",
