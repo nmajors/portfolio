@@ -2,7 +2,6 @@ body{
   font-family: Raleway;
   width: 100%;
   margin: 0;
-
   background-color: $cream;
 }
 
@@ -12,8 +11,6 @@ header{
   color: $cream;
   border-bottom: 10px solid $coral;
 }
-
-
 
 section{
   @include outer-container;
@@ -33,8 +30,10 @@ section{
 
 }
 
-
-
 ul{
   list-style-type: none;
+}
+
+a{
+  text-decoration: none;
 }

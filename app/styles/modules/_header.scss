@@ -1,16 +1,19 @@
 .header-content{
   position: relative;
   height: 160px;
+  color: $cream;
+  a{
+    color: $cream;
+  }
   .header-details{
     @include outer-container;
     @include shift(1);
     padding-left: 0;
     list-style-type: none;
     position: absolute;
-    top: 25%;
+    top: calc(25% - 10px);
     transform: translateY(-25%);
     &--name{
-      color: white;
       font-weight: 100;
       font-size: 36px;
     }
@@ -19,14 +22,11 @@
       font-size: 16px;
     }
     &--email{
-
       a{
         font-size: 14px;
-        color: $cream;
         font-weight: 100;
-        text-decoration: none;
       }
-}
+    }
   }
   .header-contact{
     @include outer-container;
@@ -40,10 +40,7 @@
     &--method{
       display: inline-block;
       padding-left: 15px;
-      a{
-        text-decoration: none;
-        color: white;
-      }
     }
   }
+  
 }

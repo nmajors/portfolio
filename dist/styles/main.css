@@ -46,6 +46,9 @@ section {
 ul {
   list-style-type: none; }
 
+a {
+  text-decoration: none; }
+
 .blue-button {
   margin-top: 30px;
   width: 40%;
@@ -93,7 +96,10 @@ ul {
 
 .header-content {
   position: relative;
-  height: 160px; }
+  height: 160px;
+  color: #FCF7E5; }
+  .header-content a {
+    color: #FCF7E5; }
   .header-content .header-details {
     max-width: 1200px;
     margin-left: auto;
@@ -102,14 +108,13 @@ ul {
     padding-left: 0;
     list-style-type: none;
     position: absolute;
-    top: 25%;
+    top: calc(25% - 10px);
     transform: translateY(-25%); }
     .header-content .header-details::after {
       clear: both;
       content: "";
       display: table; }
     .header-content .header-details--name {
-      color: white;
       font-weight: 100;
       font-size: 36px; }
     .header-content .header-details--byline {
@@ -117,9 +122,7 @@ ul {
       font-size: 16px; }
     .header-content .header-details--email a {
       font-size: 14px;
-      color: #FCF7E5;
-      font-weight: 100;
-      text-decoration: none; }
+      font-weight: 100; }
   .header-content .header-contact {
     max-width: 1200px;
     margin-left: auto;
@@ -138,9 +141,6 @@ ul {
     .header-content .header-contact--method {
       display: inline-block;
       padding-left: 15px; }
-      .header-content .header-contact--method a {
-        text-decoration: none;
-        color: white; }
 
 .profile {
   margin-top: 30px;
@@ -265,7 +265,8 @@ ul {
   cursor: default;
   margin-bottom: 15px;
   box-shadow: inset 0 0 0 140px rgba(153, 54, 45, 0.7), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
-  transition: all 0.4s ease-in-out; }
+  transition: all 0.4s ease-in-out;
+  z-index: 1; }
   .project:hover {
     box-shadow: inset 0 0 0 0px rgba(8, 28, 37, 0.3), inset 0 0 0 1px rgba(8, 28, 37, 0.5), 2px 2px 7px 0px rgba(8, 28, 37, 0.53);
     border-radius: 5%; }
@@ -288,21 +289,10 @@ ul {
     margin: 0 30px;
     padding: 110px 0 0;
     text-shadow: 0 1px 2px rgba(8, 28, 37, 0.9); }
-  .project-name a {
-    padding-top: 15px;
-    border-top: 2px solid #FCF7E5; }
 
 .project:hover .project-name {
   transform: scale(0);
   opacity: 1; }
-
-.project:hover .project-name a {
-  opacity: 1; }
-
-.project:after {
-  content: "";
-  display: table;
-  clear: both; }
 
 /*!
  * animate.css -http://daneden.me/animate

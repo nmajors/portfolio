@@ -7,6 +7,7 @@
   margin-bottom: 15px;
   box-shadow: inset 0 0 0 140px rgba(153, 54, 45, 0.7), inset 0 0 0 16px rgba(255, 255, 255,0.6), 2px 2px 7px 0px rgba(8, 28, 37,0.53);
   transition: all 0.4s ease-in-out;
+  z-index: 1;
   &:hover {
     box-shadow: inset 0 0 0 0px rgba(8, 28, 37, 0.3),  inset 0 0 0 1px rgba(8, 28, 37,0.5), 2px 2px 7px 0px rgba(8, 28, 37,0.53);
     border-radius: 5%;
@@ -31,23 +32,8 @@
     padding: 110px 0 0;
     text-shadow: 0 1px 2px rgba(8, 28, 37,0.9);
   }
-  a{
-    padding-top: 15px;
-     border-top: 2px solid $cream;
-  }
-
-
 }
 .project:hover .project-name {
   transform: scale(0);
   opacity: 1;
-}
-.project:hover .project-name a {
-  opacity: 1;
-}
-
-.project:after {
-    content: "";
-    display: table;
-    clear: both;
 }
