@@ -3,9 +3,11 @@ class PortfolioController {
 
     // this.myClass = [];
 
+
+
     this.projects = [
       {
-        // TODO: update description
+
         name: "Weather Watcher",
         description: "My final project for The Iron Yard. A fully responsive web app where each user can save addresses for their friends and family and keep track of weather conditions and severe weather situations for all of their saved locations in one place.",
         screenshot: './assets/images/weather-watcher-full.png',
@@ -54,15 +56,15 @@ class PortfolioController {
 
   }
 
-  // isInView(inview){
-  //  if (inview){
+  isInView(inview){
+   if (inview){
   //    this.myClass.push('animated slideInRight');
   //  }
-  //     console.log(inview);
+      console.log(inview);
   //
   //   // this.myClass.push('animated slideInRight');
-  // }
-
+  }
+}
 
 }
 

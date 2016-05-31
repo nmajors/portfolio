@@ -69,10 +69,14 @@
 }
 
 .tech{
-  @include shift(0.5);
+  @include shift(1);
   margin-right: 4.2649%;
   padding-top: 15px;
   line-height: 1.5;
+  $color: black;
+}
+.bold{
+  font-weight: 700;
 }
 
 
