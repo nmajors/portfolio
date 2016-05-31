@@ -56,15 +56,9 @@ class PortfolioController {
 
   }
 
-  isInView(inview){
-   if (inview){
-  //    this.myClass.push('animated slideInRight');
-  //  }
-      console.log(inview);
-  //
-  //   // this.myClass.push('animated slideInRight');
-  }
-}
+// showDescription(){
+//   let thisIsInView = inview...
+// }
 
 }
 
