@@ -43,12 +43,12 @@
         </li>
 
         <li>
-          <!-- <div in-view="thisIsInView = $inview" ng-class="{'animated slideInRight description': thisIsInView}"> -->
+          <div in-view="thisIsInView = $inview" ng-class="{'animated slideInRight description': thisIsInView, 'hidden': !thisIsInView}">
            <!-- <div class='description' in-view="portfolioCtrl.isInView($inview)" ng-class="portfolioCtrl.myClass"> -->
-           <div class="description">
+           <!-- <div class="description"> -->
             <p>
               {{ project.description }}
-            <!-- </br> -->
+            </br>
               <div class="project-buttons">
                 <a class="button-link" href="{{ project.site }}">
                   <button class="project-button">Live Site</button>
@@ -63,8 +63,12 @@
 
       </ul>
     </div>
-      <p class="tech">Tools and Technologies: {{ project.tech }}</p>
+      <p class="tech"><span class="bold">Tools and Technologies:</span> {{ project.tech }}</p>
   </section>
+
+  <div class="bottom-email">
+    <a href="mailto:nmajors@gmail.com" title="nmajors@gmail.com">nmajors@gmail.com</a>
+  </div>
 
 
 </div>
