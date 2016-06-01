@@ -4,8 +4,6 @@ class PortfolioController {
     // this.myClass = ['description'];
 
 
-
-
     this.projects = [
       {
 
@@ -56,6 +54,7 @@ class PortfolioController {
     ];
 
   }
+
 
 // showDescription(index, inview, inviewpart, event){
 //   let thisIsInView = inview;

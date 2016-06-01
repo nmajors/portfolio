@@ -24,7 +24,7 @@
   transform: scale(1);
   backface-visibility: hidden;
   h3 {
-    color: #fff;
+    color: $cream;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 22px;
@@ -36,4 +36,9 @@
 .project:hover .project-name {
   transform: scale(0);
   opacity: 1;
+}
+.project:after {
+    content: "";
+    display: table;
+    clear: both;
 }
