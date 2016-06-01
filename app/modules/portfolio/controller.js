@@ -1,7 +1,8 @@
 class PortfolioController {
   constructor(){
 
-    // this.myClass = [];
+    // this.myClass = ['description'];
+
 
 
 
@@ -56,8 +57,19 @@ class PortfolioController {
 
   }
 
-// showDescription(){
-//   let thisIsInView = inview...
+// showDescription(index, inview, inviewpart, event){
+//   let thisIsInView = inview;
+//   if (inview){
+//     return true;
+//     console.log("index" + index);
+//     console.log("inview" + inview);
+//     console.log("inviewpart" + inviewpart);
+//     console.log("event" + event);
+//
+//   }
+//   else {
+//     return false;
+//   }
 // }
 
 }
