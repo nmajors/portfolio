@@ -52,9 +52,13 @@ class PortfolioController {
         tech: "HTML, CSS/SASS, JavaScript, OpenWeatherMap API, and Geolocation."
       }
     ];
-
+// this.isInview()
   }
-
+// isInview(inview){
+//   if(inview){
+//   console.log(inview);
+// }
+// }
 
 // showDescription(index, inview, inviewpart, event){
 //   let thisIsInView = inview;

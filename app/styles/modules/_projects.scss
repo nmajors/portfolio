@@ -25,11 +25,19 @@
   @include span-columns(11.5);
   @include shift(-1.25);
   @media screen and(min-width: 400px){
-    @include span-columns(10);
+    @include span-columns(11);
     @include shift(0);
   }
+  // @media screen and(min-width: 600px){
+  //
+  // }
   @media screen and(min-width: 768px){
     @include span-columns(5);
+    @include shift(0.25);
+  }
+  @media screen and(min-width: 900px){
+    @include span-columns(5);
+    @include shift(0);
   }
 }
 .description{
@@ -44,14 +52,19 @@
   z-index: 1;
   @include span-columns(13);
   min-height: 340px;
-  @media screen and(min-width: 768px){
-    @include span-columns(13.5);
-    // @include omega;
-    min-height: 320px;
-  }
-  @media screen and(min-width: 900px){
+  @media screen and(min-width: 400px){
+    @include span-columns(12);
     min-height: 280px;
   }
+  @media screen and(min-width: 600px){
+    @include span-columns(12);
+  }
+  @media screen and(min-width: 768px){
+    @include span-columns(13.5);
+    min-height: 320px;
+  }
+  // @media screen and(min-width: 900px){
+  // }
 
   p{
     position: absolute;
@@ -60,11 +73,14 @@
     padding: 0 15px;
     top: calc(50% - 7px);
     transform: translateY(-60%);
-      @media screen and(min-width: 768px){
+      @media screen and(min-width: 400px){
         padding: 0 30px;
         top: calc(50% - 15px);
         transform: translateY(-50%);
       }
+      // @media screen and(min-width: 400px){
+      //   padding: 0 60px;
+      // }
   }
 }
 .project-buttons{
@@ -119,7 +135,7 @@
   // margin-top: 30px;
   @media screen and(min-width: 768px){
     // margin-right: 4.2649%;
-    // padding-top: 15px;
+    margin-top: 30px;
   }
 
 }

@@ -1,22 +1,35 @@
 .profile{
   margin-top: 30px;
   position: relative;
+  @include outer-container;
+  @include shift(0.5);
+  min-height: 460px;
   &--bio{
     list-style-type: none;
-    @include span-columns(6 of 12);
-    @include shift(0.5);
+    @include span-columns(6);
+    @include shift(.75);
     position: absolute;
-    top: calc(50% - 15px);
+    top: calc(50% - 28px);
     transform: translateY(-50%);
     z-index: 1;
+    padding-left: 0;
     li{
       padding-bottom: 15px;
     }
+    .profile-buttons{
+      padding: 0 15px;
+      button{
+        min-width: 164px;
+      }
+
+    }
   }
   &--photo{
-    @include span-columns(4 of 12);
+    @include span-columns(4);
     @include shift(7.25);
     position: absolute;
+    top: calc(50% - 15px);
+    transform: translateY(-50%);
     img{
       width: 100%;
       border-radius: 5%;
@@ -27,6 +40,6 @@
   }
 
 #resume-download{
-  margin-left: 10%;
+  float: right;
 }
 }

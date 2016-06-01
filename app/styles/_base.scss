@@ -29,17 +29,17 @@ section{
   @include shift(0.5);
   min-height: 780px;
   @media screen and(min-width: 400px){
-    min-height: 760px;
+    min-height: 690px;
   }
   @media screen and(min-width: 768px){
     // @include span-columns(10);
-    // @include shift(1);
-    min-height: 452px;
+    // @include shift(0);
+    min-height: 467px;
     padding: 30px 0;
   }
-  @media screen and(min-width: 900px){
-    min-height: 400px;
-  }
+  // @media screen and(min-width: 900px){
+  //   min-height: 400px;
+  // }
 
 }
 

@@ -2,44 +2,85 @@
   position: relative;
   height: 160px;
   color: $cream;
+  text-align: center;
+  @media screen and(min-width: 768px){
+    text-align: left;
+  }
   a{
     color: $cream;
   }
   .header-details{
-    @include outer-container;
-    @include shift(1);
     padding-left: 0;
     list-style-type: none;
     position: absolute;
-    top: calc(25% - 10px);
-    transform: translateY(-25%);
+    left: 50%;
+    transform: translate(-50%, 0);
+    @media screen and(min-width: 768px){
+      @include outer-container;
+      @include shift(0.5);
+      left: 0;
+      top: calc(25% - 10px);
+      transform: translate(0, -25%);
+
+    }
     &--name{
       font-weight: 100;
       font-size: 36px;
+
     }
     &--byline{
       font-weight: 100;
+      font-size: 20px;
+      @media screen and(min-width: 768px){
       font-size: 16px;
+}
     }
     &--email{
       a{
         font-size: 14px;
         font-weight: 100;
+        display: none;
+        @media screen and(min-width: 768px){
+          display: inline;
+        }
       }
     }
   }
   .header-contact{
-    @include outer-container;
-    @include shift(9);
-    list-style-type: none;
+    // @include outer-container;
+    // @include shift(8.5);
+    // @media screen and(min-width: 900px){
+    // @include shift(9);
+    // }
     font-size: 32px;
+    list-style-type: none;
+    padding-left: 0;
+
     font-weight: 100;
     position: absolute;
-    top: 25%;
-    transform: translateY(-50%);
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 0);
+    // left: 320px;
+    // top: 33%;
+    // bottom: -15px;
+
+    @media screen and(min-width: 768px){
+      left: initial;
+      right: 6%;
+      top: 25%;
+      transform: translateY(-50%);
+      // font-size: 32px;
+
+    }
     &--method{
       display: inline-block;
+        padding-left: 0;
+        padding-right: 15px;
+          @media screen and(min-width: 768px){
       padding-left: 15px;
+      padding-right: 0;
+    }
     }
   }
 
