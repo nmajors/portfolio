@@ -19,8 +19,7 @@
 }
 
 .sidebar{
-  border-left: 1px solid $darkblue;
-  width: 100%;
+  width: 25%;
   position: fixed;
   text-align: right;
   right: 2%;
@@ -43,8 +42,10 @@
   position: relative;
   left: 2%;
   bottom: 8px;
+  width: 25%;
   a{
     // padding: 15px 0;
+
     font-size: 18px;
     color: $black;
     opacity: .6;

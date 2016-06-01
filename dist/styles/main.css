@@ -66,8 +66,7 @@ a {
   text-decoration: none; }
 
 .sidebar {
-  border-left: 1px solid #145173;
-  width: 100%;
+  width: 25%;
   position: fixed;
   text-align: right;
   right: 2%;
@@ -86,7 +85,8 @@ a {
 .bottom-email {
   position: relative;
   left: 2%;
-  bottom: 8px; }
+  bottom: 8px;
+  width: 25%; }
   .bottom-email a {
     font-size: 18px;
     color: #081C25;
