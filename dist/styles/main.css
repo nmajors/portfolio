@@ -221,21 +221,21 @@ a {
       min-height: 400px; } }
   .profile--bio {
     list-style-type: none;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 87.20529%;
-    margin-left: 6.39735%;
     position: absolute;
     bottom: 30px;
     z-index: 1;
     padding-left: 0;
     font-weight: 700; }
-    .profile--bio:last-child {
-      margin-right: 0; }
     @media screen and (min-width: 400px) {
       .profile--bio {
-        font-weight: 400; } }
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 87.20529%;
+        margin-left: 6.39735%;
+        font-weight: 400; }
+        .profile--bio:last-child {
+          margin-right: 0; } }
     @media screen and (min-width: 768px) {
       .profile--bio {
         float: left;
@@ -261,9 +261,11 @@ a {
           .profile--bio .profile-buttons:last-child {
             margin-right: 0; } }
       .profile--bio .profile-buttons button {
-        min-width: 146px; }
+        font-size: 12px;
+        min-width: 132px; }
         @media screen and (min-width: 420px) {
           .profile--bio .profile-buttons button {
+            font-size: 14px;
             min-width: 164px; } }
         .profile--bio .profile-buttons button i {
           display: none; }
