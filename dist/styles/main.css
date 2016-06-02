@@ -189,7 +189,7 @@ a {
     font-weight: 100;
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 50%;
     transform: translate(-50%, 0); }
     @media screen and (min-width: 768px) {
       .header-content .header-contact {
