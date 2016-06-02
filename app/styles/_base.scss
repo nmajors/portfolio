@@ -8,7 +8,10 @@ body{
 }
 
 header{
-  height: 160px;
+  height: 180px;
+  @media screen and(min-width: 400px){
+    height: 160px;
+  }
   background-color: $darkblue;
   color: $cream;
   border-bottom: 10px solid $coral;

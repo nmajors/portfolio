@@ -13,10 +13,13 @@ body {
   padding-bottom: 15px; }
 
 header {
-  height: 160px;
+  height: 180px;
   background-color: #145173;
   color: #FCF7E5;
   border-bottom: 10px solid #F75849; }
+  @media screen and (min-width: 400px) {
+    header {
+      height: 160px; } }
 
 section {
   max-width: 1200px;
@@ -129,9 +132,12 @@ a {
 
 .header-content {
   position: relative;
-  height: 160px;
   color: #FCF7E5;
-  text-align: center; }
+  text-align: center;
+  height: 180px; }
+  @media screen and (min-width: 400px) {
+    .header-content {
+      height: 160px; } }
   @media screen and (min-width: 768px) {
     .header-content {
       text-align: left; } }
