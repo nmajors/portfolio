@@ -13,8 +13,7 @@
   }
   &--bio{
     list-style-type: none;
-    @include span-columns(10.5);
-    @include shift(.75);
+
     position: absolute;
     // top: 75%;
     bottom: 30px;
@@ -22,6 +21,8 @@
     padding-left: 0;
     font-weight: 700;
     @media screen and(min-width: 400px){
+      @include span-columns(10.5);
+      @include shift(.75);
       font-weight: 400;
     }
     @media screen and(min-width: 768px) {
@@ -38,6 +39,9 @@
     }
     .profile-buttons{
       text-align: center;
+      // width: 100%;
+      // @include span-columns(12);
+      // min-width: 320px;
       @media screen and(min-width: 768px) {
         text-align: left;
         @include span-columns(12);
@@ -47,9 +51,10 @@
     }
       button{
 
-        // font-size: 16px;
-        min-width: 146px;
+        font-size: 12px;
+        min-width: 132px;
         @media screen and(min-width: 420px) {
+        font-size: 14px;
         min-width: 164px;
         }
         i{
