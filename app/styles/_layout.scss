@@ -73,3 +73,9 @@
     text-decoration: none;
   }
 }
+.hidden-small{
+  display: none;
+  @media screen and(min-width: 500px){
+    display: block;
+  }
+}

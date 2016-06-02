@@ -1,6 +1,7 @@
 .profile{
   margin-top: 30px;
   position: relative;
+  color: $black;
   @include outer-container;
   @include shift(0.5);
     min-height: 660px;
@@ -19,12 +20,18 @@
     bottom: 30px;
     z-index: 1;
     padding-left: 0;
+    font-weight: 700;
+    @media screen and(min-width: 400px){
+      font-weight: 400;
+    }
     @media screen and(min-width: 768px) {
       // bottom: 100%;
+
       @include span-columns(6);
       @include shift(.75);
       top: calc(50% - 28px);
       transform: translateY(-50%);
+
     }
     li{
       padding-bottom: 15px;

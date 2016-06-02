@@ -121,6 +121,12 @@ a {
     font-weight: 700;
     text-decoration: none; }
 
+.hidden-small {
+  display: none; }
+  @media screen and (min-width: 500px) {
+    .hidden-small {
+      display: block; } }
+
 .header-content {
   position: relative;
   height: 160px;
@@ -197,6 +203,7 @@ a {
 .profile {
   margin-top: 30px;
   position: relative;
+  color: #081C25;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -222,9 +229,13 @@ a {
     position: absolute;
     bottom: 30px;
     z-index: 1;
-    padding-left: 0; }
+    padding-left: 0;
+    font-weight: 700; }
     .profile--bio:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 400px) {
+      .profile--bio {
+        font-weight: 400; } }
     @media screen and (min-width: 768px) {
       .profile--bio {
         float: left;

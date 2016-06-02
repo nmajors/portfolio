@@ -5,6 +5,7 @@
 //   }
 // }
 
+
 .projects-container {
   @include outer-container;
 
@@ -40,6 +41,7 @@
     @include shift(0);
   }
 }
+
 .description{
   background-color: $cream;
   color: $black;
@@ -136,7 +138,6 @@
     // margin-right: 4.2649%;
     margin-top: 30px;
   }
-
 }
 .bold{
   font-weight: 700;
