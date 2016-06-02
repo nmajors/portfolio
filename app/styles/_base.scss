@@ -29,7 +29,7 @@ section{
   @include shift(0.5);
   min-height: 780px;
   @media screen and(min-width: 400px){
-    min-height: 690px;
+    min-height: 750px;
   }
   @media screen and(min-width: 768px){
     // @include span-columns(10);

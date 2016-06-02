@@ -54,7 +54,6 @@
   min-height: 340px;
   @media screen and(min-width: 400px){
     @include span-columns(12);
-    min-height: 280px;
   }
   @media screen and(min-width: 600px){
     @include span-columns(12);
